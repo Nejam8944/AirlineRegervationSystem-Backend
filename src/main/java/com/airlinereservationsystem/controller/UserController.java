@@ -13,7 +13,7 @@ import com.airlinereservationsystem.services.UserService;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin(origins = {"http://localhost:3000", "http://192.0.0.2:3000" , "http://192.168.209.189:3000"})
+@CrossOrigin(origins = {"http://localhost:3000", "http://192.168.41.7:3000" , "http://192.168.209.189:3000"})
 public class UserController {
 
     @Autowired

@@ -60,7 +60,7 @@ public class SecurityConfig {
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost:3000"); // Replace with your frontend URL
         config.addAllowedOrigin("http://192.168.209.189:3000"); // Replace with your frontend URL
-        config.addAllowedOrigin("http://192.0.0.2:3000"); // Replace with your frontend URL
+        config.addAllowedOrigin("http://192.168.41.7:3000"); // Replace with your frontend URL
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", config);
