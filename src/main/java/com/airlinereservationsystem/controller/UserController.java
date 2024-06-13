@@ -13,7 +13,7 @@ import com.airlinereservationsystem.services.UserService;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin(origins = {"https://airlineregervationsystem-frontend.onrender.com", "*"})
+@CrossOrigin(origins = "*")
 public class UserController {
 
     @Autowired
