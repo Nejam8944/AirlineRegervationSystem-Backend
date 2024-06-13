@@ -58,8 +58,9 @@ public class SecurityConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);
-        config.addAllowedOrigin("https://airlineregervationsystem-backend.onrender.com");
+        config.addAllowedOrigin("https://airlineregervationsystem-frontend.onrender.com"); // Replace with your frontend URL
+        // config.addAllowedOrigin("http://192.168.209.189:3000"); // Replace with your frontend URL
+        // config.addAllowedOrigin("http://192.168.41.7:3000"); // Replace with your frontend URL
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", config);
